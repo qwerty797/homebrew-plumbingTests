@@ -8,11 +8,11 @@ class Plumbingtests < Formula
 
   if OS.mac?
     url "https://github.com/qwerty797/plumbingTests/releases/download/v1.0.0/index-macos"
-    sha256 "3222a85102eeb3011eef4a0e786d0f298f21c3748ab907ebf6c26b5587aca8ab"
+    sha256 "900a2bc5507f9a49c83296da58d129c9d6c650f93375853cc60511825b5cec5f"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/qwerty797/plumbingTests/releases/download/v1.0.0/index-macos"
-      sha256 "3222a85102eeb3011eef4a0e786d0f298f21c3748ab907ebf6c26b5587aca8ab"
+      sha256 "900a2bc5507f9a49c83296da58d129c9d6c650f93375853cc60511825b5cec5f"
     end
   end
 
