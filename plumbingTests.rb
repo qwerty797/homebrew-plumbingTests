@@ -5,16 +5,17 @@ class Plumbingtests < Formula
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/qwerty797/plumbingTests/releases/download/v1.0.0/index-macos"
-    sha256 "3222a85102eeb3011eef4a0e786d0f298f21c3748ab907ebf6c26b5587aca8ab"
+    url "https://github.com/qwerty797/plumbingTests/releases/download/v0.0.3/plumbingTests-macos"
+    sha256 "9e048091d9c62ebda02c8909c92d879c71cc44050652f9137fcab91c3708f349"
+    
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/qwerty797/plumbingTests/releases/download/v1.0.0/index-macos"
-      sha256 "3222a85102eeb3011eef4a0e786d0f298f21c3748ab907ebf6c26b5587aca8ab"
+      url "https://github.com/qwerty797/plumbingTests/releases/download/v0.0.3/plumbingTests-macos"
+      sha256 "9e048091d9c62ebda02c8909c92d879c71cc44050652f9137fcab91c3708f349"
     end
   end
 
   def install
-    bin.install (OS.linux? ? "index-macos" : "index-macos") => "plumbing"
+    bin.install (OS.linux? ? "plumbingTests-macos" : "plumbingTests-macos") => "plumbing"
   end
 end
