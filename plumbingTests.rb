@@ -5,12 +5,12 @@ class Plumbingtests < Formula
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/qwerty797/plumbingTests/releases/download/v0.0.5/plumbingTests-macos", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/qwerty797/homebrew-plumbingTests/releases/download/v0.0.5/plumbingTests-macos"
     sha256 "f3c9d7e5096bb43557baf808d3e4b9fba664dff4540ae62ec3330df2b865860a"
     
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/qwerty797/plumbingTests/releases/download/v0.0.5/plumbingTests-macos", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/qwerty797/homebrew-plumbingTests/releases/download/v0.0.5/plumbingTests-macos"
       sha256 "f3c9d7e5096bb43557baf808d3e4b9fba664dff4540ae62ec3330df2b865860a"
     end
   end
