@@ -15,6 +15,11 @@ class Plumbingtests < Formula
     end
   end
 
+  def checkPreviosVersion
+    output = brew unlink plumbingtests
+    p output
+  end 
+  
   def install
     bin.install (OS.linux? ? "plumbingTests-macos" : "plumbingTests-macos") => "plumbing"
   end
